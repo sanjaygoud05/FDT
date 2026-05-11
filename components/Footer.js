@@ -8,9 +8,9 @@ function Footer() {
                     <div className="sm:col-span-2 lg:col-span-1 lg:border-r border-[#1f1f3a] lg:pr-8 reveal reveal-left delay-200">
                         <a href="#home" className="inline-block mb-5">
                             <img
-                                src="https://app.trickle.so/storage/public/images/usr_1f04cef398000001/d6dbe98d-af18-469e-98f0-e634d48f93cc.jpeg"
+                                src="assets/logo.png"
                                 alt="Forge Digital Technologies Logo"
-                                className="h-16 sm:h-20 w-auto object-contain brightness-110 contrast-125"
+                                className="h-14 sm:h-16 w-auto object-contain"
                             />
                         </a>
                         <p className="text-[13px] text-gray-500 mb-6 leading-relaxed max-w-xs">
@@ -36,7 +36,7 @@ function Footer() {
                     <div className="reveal reveal-up delay-300">
                         <h4 className="text-white font-semibold text-[15px] mb-5">Quick Links</h4>
                         <ul className="space-y-3.5">
-                            {[['#home','Home'],['#about','About Us'],['#services','Services'],['#work','Our Work'],['#blog','Blog'],['#contact','Contact']].map(([href, label]) => (
+                            {[['#home', 'Home'], ['#about-page', 'About Us'], ['#services', 'Services'], ['#work', 'Our Work'], ['#blog', 'Blog'], ['#contact-page', 'Contact']].map(([href, label]) => (
                                 <li key={href}><a href={href} className="text-[13px] text-gray-400 hover:text-white transition-colors">{label}</a></li>
                             ))}
                         </ul>
@@ -46,7 +46,7 @@ function Footer() {
                     <div className="reveal reveal-up delay-400">
                         <h4 className="text-white font-semibold text-[15px] mb-5">Services</h4>
                         <ul className="space-y-3.5">
-                            {['Web Development','SaaS Development','UI/UX Design','Startup Tech Solutions','Automation & Tools','Hosting & Deployment'].map(svc => (
+                            {['Web Development', 'SaaS Development', 'UI/UX Design', 'Startup Tech Solutions', 'Automation & Tools', 'Hosting & Deployment'].map(svc => (
                                 <li key={svc}><a href="#" className="text-[13px] text-gray-400 hover:text-white transition-colors">{svc}</a></li>
                             ))}
                         </ul>
@@ -59,7 +59,7 @@ function Footer() {
                             <ul className="space-y-4">
                                 {[
                                     { icon: 'icon-mail', text: 'hello@forgedigital.tech' },
-                                    { icon: 'icon-phone', text: '+91 12345 67890' },
+                                    { icon: 'icon-phone', text: '+91 63042 18064' },
                                     { icon: 'icon-globe', text: 'www.forgedigital.tech' },
                                     { icon: 'icon-map-pin', text: 'India' },
                                 ].map(({ icon, text }) => (
@@ -74,16 +74,13 @@ function Footer() {
                         {/* Proudly Part Of */}
                         <div className="pt-4 border-t border-[#1f1f3a]">
                             <span className="text-[11px] text-gray-500 mb-3 block uppercase tracking-wider font-medium">Proudly Part of</span>
-                            <div className="flex items-center gap-2 mb-2">
-                                <span className="text-white font-bold text-2xl sm:text-3xl italic shrink-0 leading-none">SF</span>
-                                <div className="flex flex-col justify-center">
-                                    <span className="text-[13px] font-bold text-white tracking-widest uppercase leading-none mb-1">STUDENT FORGE</span>
-                                    <span className="text-[9px] text-gray-500 uppercase tracking-widest leading-none">TECHNOLOGIES PVT. LTD.</span>
-                                </div>
+                            <div className="flex flex-col justify-center">
+                                <span className="text-[13px] font-bold text-white tracking-widest uppercase leading-none mb-1">STUDENT FORGE</span>
+                                <span className="text-[9px] text-gray-500 uppercase tracking-widest leading-none">TECHNOLOGIES PVT. LTD.</span>
                             </div>
-                            <p className="text-[11px] text-gray-600 font-medium">Empowering Student. Building Future.</p>
                         </div>
                     </div>
+
                 </div>
 
                 {/* Bottom Bar */}
@@ -94,3 +91,5 @@ function Footer() {
         </footer>
     );
 }
+
+window.Footer = Footer;

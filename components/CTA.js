@@ -1,6 +1,6 @@
 function CTA() {
     return (
-        <section className="pt-4 pb-14 sm:pb-16 bg-[#020205]">
+        <section className="pt-2 pb-10 sm:pb-12 bg-[#020205]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="bg-gradient-to-r from-[#170a36] via-[#2c1566] to-[#170a36] border border-[#3b1d82] rounded-2xl sm:rounded-[24px] p-6 sm:p-8 lg:px-14 lg:py-10 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 shadow-[0_10px_40px_rgba(90,50,250,0.15)] reveal reveal-up">
 
@@ -19,17 +19,19 @@ function CTA() {
 
                     {/* Buttons */}
                     <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 shrink-0 w-full md:w-auto reveal reveal-right delay-400">
-                        <button className="w-full xs:w-auto bg-white text-[#170a36] hover:bg-gray-100 px-6 md:px-7 py-3 md:py-3.5 rounded-full font-semibold text-sm flex items-center justify-center gap-2.5 transition-colors shadow-lg whitespace-nowrap">
+                        <a href="#contact-page" className="w-full xs:w-auto bg-white text-[#170a36] hover:bg-gray-100 px-6 md:px-7 py-3 md:py-3.5 rounded-full font-semibold text-sm flex items-center justify-center gap-2.5 transition-colors shadow-lg whitespace-nowrap">
                             Start Your Project
                             <div className="icon-arrow-right bg-[#170a36] text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px]"></div>
-                        </button>
-                        <button className="w-full xs:w-auto border-2 border-[#4623c2] hover:border-purple-400 bg-transparent text-white px-6 md:px-7 py-3 md:py-3.5 rounded-full font-semibold text-sm flex items-center justify-center gap-2.5 transition-colors whitespace-nowrap">
+                        </a>
+                        <a href="#contact-page" className="w-full xs:w-auto border-2 border-[#4623c2] hover:border-purple-400 bg-transparent text-white px-6 md:px-7 py-3 md:py-3.5 rounded-full font-semibold text-sm flex items-center justify-center gap-2.5 transition-all whitespace-nowrap">
                             Book a Call
                             <div className="icon-phone text-[14px]"></div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     );
 }
+
+window.CTA = CTA;

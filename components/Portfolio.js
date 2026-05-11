@@ -2,16 +2,11 @@ function Portfolio() {
     const projects = [
         { name: "EduHub Platform", category: "Education Tech", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "A comprehensive learning management system for modern educational institutions.", link: "#" },
         { name: "TaskFlow SaaS", category: "Productivity", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "An intuitive project management tool designed for agile remote teams.", link: "#" },
-        { name: "FitTrack Analytics", category: "Health & Fitness", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "A powerful data analytics dashboard for tracking fitness goals and metrics.", link: "#" },
-        { name: "ShopEase Mobile", category: "E-Commerce", image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "A seamless mobile shopping experience built for maximum conversion.", link: "#" },
-        { name: "FinDash Pro", category: "Finance", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "Real-time financial tracking and forecasting dashboard for enterprise clients.", link: "#" },
-        { name: "HealthConnect", category: "Healthcare", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "Telemedicine platform connecting patients with medical professionals securely.", link: "#" },
-        { name: "RealEstate Hub", category: "Real Estate", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "Property listing and management platform with virtual tours.", link: "#" },
-        { name: "TravelMate App", category: "Travel", image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "All-in-one travel booking and itinerary planning application.", link: "#" }
+        { name: "FitTrack Analytics", category: "Health & Fitness", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", desc: "A powerful data analytics dashboard for tracking fitness goals and metrics.", link: "#" }
     ];
 
     return (
-        <section id="work" className="py-16 sm:py-24 bg-[#020205] relative overflow-hidden">
+        <section id="work" className="py-12 sm:py-16 bg-[#020205] relative overflow-hidden">
             <div className="absolute top-1/2 left-0 w-72 h-72 md:w-96 md:h-96 bg-purple-900/10 rounded-full blur-[120px] pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -26,11 +21,11 @@ function Portfolio() {
                     </h3>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                     {projects.map((proj, idx) => (
                         <div 
                             key={idx} 
-                            className={`group relative rounded-xl overflow-hidden bg-[#0a0a16] border border-[#1f1f3a] hover:border-purple-500/50 transition-all duration-500 flex flex-col reveal reveal-up delay-${(idx % 4) * 100 + 100}`}
+                            className={`group relative rounded-xl overflow-hidden bg-[#0a0a16] border border-[#1f1f3a] hover:border-purple-500/50 transition-all duration-500 flex flex-col reveal reveal-up delay-${(idx % 3) * 100 + 100}`}
                         >
                             {/* Image */}
                             <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#111122]">
@@ -64,13 +59,9 @@ function Portfolio() {
                     ))}
                 </div>
 
-                <div className="mt-10 sm:mt-12 flex justify-center reveal reveal-up delay-400">
-                    <a href="#" className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full border border-[#2a2a4a] text-white text-sm font-medium hover:bg-white hover:text-black transition-all duration-300 group">
-                        View More Projects
-                        <div className="icon-arrow-right transform group-hover:translate-x-1 transition-transform"></div>
-                    </a>
-                </div>
             </div>
         </section>
     );
 }
+
+window.Portfolio = Portfolio;

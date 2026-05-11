@@ -18,28 +18,29 @@ function Navbar() {
                     {/* Logo */}
                     <a href="#home" className="flex items-center shrink-0 z-50" onClick={closeMenu}>
                         <img
-                            src="https://app.trickle.so/storage/public/images/usr_1f04cef398000001/d6dbe98d-af18-469e-98f0-e634d48f93cc.jpeg"
+                            src="assets/logo.png"
                             alt="Forge Digital Technologies Logo"
-                            className="h-14 sm:h-16 md:h-20 w-auto object-contain brightness-110 contrast-125"
+                            className="h-14 sm:h-16 md:h-20 w-auto object-contain"
+                            style={{ filter: 'brightness(1) invert(0)' }}
                         />
                     </a>
 
                     {/* Desktop Nav */}
                     <div className="hidden md:flex space-x-6 lg:space-x-8 items-center">
                         <a href="#home" className="text-white font-medium text-sm transition-colors relative after:absolute after:-bottom-1.5 after:left-0 after:w-full after:h-0.5 after:bg-purple-500">Home</a>
-                        <a href="#about" className="text-gray-300 font-medium text-sm hover:text-white transition-colors">About</a>
+                        <a href="#about-page" className="text-gray-300 font-medium text-sm hover:text-white transition-colors">About</a>
                         <a href="#services" className="text-gray-300 font-medium text-sm hover:text-white transition-colors">Services</a>
                         <a href="#work" className="text-gray-300 font-medium text-sm hover:text-white transition-colors">Our Work</a>
                         <a href="#blog" className="text-gray-300 font-medium text-sm hover:text-white transition-colors">Blog</a>
-                        <a href="#contact" className="text-gray-300 font-medium text-sm hover:text-white transition-colors">Contact</a>
+                        <a href="#contact-page" className="text-gray-300 font-medium text-sm hover:text-white transition-colors">Contact</a>
                     </div>
 
                     {/* Desktop CTA */}
                     <div className="hidden md:flex">
-                        <button className="bg-gradient-primary hover:opacity-90 text-white px-5 py-2.5 rounded-full font-medium text-sm flex items-center gap-2 transition-all">
+                        <a href="#contact-page" className="bg-gradient-primary hover:opacity-90 text-white px-5 py-2.5 rounded-full font-medium text-sm flex items-center gap-2 transition-all">
                             Let's Talk
                             <div className="icon-arrow-right text-sm bg-white text-purple-600 rounded-full w-4 h-4 flex items-center justify-center"></div>
-                        </button>
+                        </a>
                     </div>
 
                     {/* Mobile Hamburger */}
@@ -61,11 +62,11 @@ function Navbar() {
                 <div className="flex flex-col items-start px-5 py-5 space-y-1">
                     {[
                         { href: '#home', label: 'Home' },
-                        { href: '#about', label: 'About' },
+                        { href: '#about-page', label: 'About' },
                         { href: '#services', label: 'Services' },
                         { href: '#work', label: 'Our Work' },
                         { href: '#blog', label: 'Blog' },
-                        { href: '#contact', label: 'Contact' },
+                        { href: '#contact-page', label: 'Contact' },
                     ].map(({ href, label }) => (
                         <a
                             key={href}
@@ -76,15 +77,18 @@ function Navbar() {
                             {label}
                         </a>
                     ))}
-                    <button
+                    <a
+                        href="#contact-page"
                         onClick={closeMenu}
                         className="mt-4 w-full justify-center bg-gradient-primary hover:opacity-90 text-white px-6 py-3.5 rounded-full font-medium text-sm flex items-center gap-2 transition-all"
                     >
                         Let's Talk
                         <div className="icon-arrow-right text-[10px] bg-white text-purple-600 rounded-full w-4 h-4 flex items-center justify-center"></div>
-                    </button>
+                    </a>
                 </div>
             </div>
         </nav>
     );
 }
+
+window.Navbar = Navbar;

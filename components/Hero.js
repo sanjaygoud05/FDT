@@ -1,12 +1,6 @@
 function Hero() {
     return (
-        <section id="home" className="pt-20 sm:pt-24 md:pt-32 pb-12 md:pb-16 relative overflow-hidden bg-[#020205]">
-            {/* Background blobs */}
-            <div className="absolute inset-0 overflow-hidden -z-10 pointer-events-none">
-                <div className="absolute top-0 right-[10%] w-[200px] sm:w-[350px] md:w-[500px] h-[200px] sm:h-[350px] md:h-[500px] bg-purple-700/20 rounded-full blur-[80px] md:blur-[120px] opacity-40"></div>
-                <div className="absolute bottom-1/4 left-0 w-[150px] sm:w-[280px] md:w-[400px] h-[150px] sm:h-[280px] md:h-[400px] bg-blue-600/15 rounded-full blur-[60px] md:blur-[100px] opacity-30"></div>
-            </div>
-
+        <section id="home" className="pt-20 sm:pt-24 md:pt-32 pb-8 md:pb-10 relative overflow-hidden bg-[#020205]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-center">
 
@@ -16,22 +10,22 @@ function Hero() {
                             BUILDING SOLUTIONS. DRIVING GROWTH.
                         </div>
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[58px] xl:text-[64px] font-bold leading-[1.1] mb-5 text-white tracking-tight">
-                            We Build Digital<br className="hidden xs:block"/>
-                            {' '}Products That{' '}
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-300">Perform</span>
+                            Engineering Iconic<br className="hidden xs:block"/>
+                            {' '}Digital{' '}
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-300">Masterpieces</span>
                         </h1>
                         <p className="text-gray-400 text-sm sm:text-base md:text-lg mb-7 md:mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                            We design, develop and deploy powerful websites, SaaS platforms and custom software for startups and businesses.
+                            We don't just build software; we engineer high-performance systems and iconic designs that define the next generation of business.
                         </p>
                         <div className="flex flex-col xs:flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-8 md:mb-12">
-                            <button className="w-full xs:w-auto justify-center bg-gradient-to-r from-purple-600 to-purple-500 hover:opacity-90 text-white px-6 md:px-8 py-3 sm:py-3.5 rounded-full font-medium flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(147,51,234,0.3)] text-sm sm:text-base">
+                            <a href="#contact-page" className="w-full xs:w-auto justify-center bg-gradient-to-r from-purple-600 to-purple-500 hover:opacity-90 text-white px-6 md:px-8 py-3 sm:py-3.5 rounded-full font-medium flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(147,51,234,0.3)] text-sm sm:text-base">
                                 Start Your Project
                                 <div className="icon-arrow-right text-sm bg-white text-purple-600 rounded-full w-5 h-5 flex items-center justify-center"></div>
-                            </button>
-                            <button className="w-full xs:w-auto justify-center border border-gray-600 hover:border-gray-400 text-white px-6 md:px-8 py-3 sm:py-3.5 rounded-full font-medium flex items-center gap-2 transition-all bg-transparent text-sm sm:text-base">
+                            </a>
+                            <a href="#work" className="w-full xs:w-auto justify-center border border-gray-600 hover:border-gray-400 text-white px-6 md:px-8 py-3 sm:py-3.5 rounded-full font-medium flex items-center gap-2 transition-all bg-transparent text-sm sm:text-base">
                                 View Our Work
                                 <div className="icon-arrow-right text-sm"></div>
-                            </button>
+                            </a>
                         </div>
 
                         <div className="reveal reveal-up delay-200">
@@ -46,17 +40,13 @@ function Hero() {
                         </div>
                     </div>
 
-                    {/* Right Graphic */}
-                    <div className="flex relative h-[220px] xs:h-[280px] sm:h-[360px] lg:h-[560px] w-full items-center justify-center lg:justify-end z-20 mt-4 lg:mt-0 reveal reveal-right">
-                        <div className="relative w-full max-w-[280px] xs:max-w-[360px] sm:max-w-[480px] lg:max-w-[800px] xl:scale-110 xl:translate-x-10 z-10 flex items-center justify-center">
-                            <img
-                                src="https://app.trickle.so/storage/public/images/usr_1f04cef398000001/34280469-9fbb-41a6-ae28-b943a32ad6ed.jpeg"
-                                alt="Forge Digital Products Platform"
-                                className="w-full h-auto object-contain mix-blend-screen"
-                                style={{
-                                    WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 75%)',
-                                    maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 75%)'
-                                }}
+                    {/* Right Graphic - Branded Laptop Image */}
+                    <div className="flex relative h-[300px] xs:h-[350px] sm:h-[450px] lg:h-[600px] w-full items-center justify-center lg:justify-end z-20 mt-8 lg:mt-0 reveal reveal-right">
+                        <div className="relative w-full max-w-[320px] xs:max-w-[400px] sm:max-w-[550px] lg:max-w-[850px] xl:scale-110 xl:translate-x-10 z-10 flex items-center justify-center">
+                            <img 
+                                src="assets/hero-laptop.jpg" 
+                                alt="Forge Digital Technologies Platform" 
+                                className="w-full h-auto object-contain rounded-2xl shadow-2xl"
                             />
                         </div>
                     </div>
@@ -85,3 +75,5 @@ function Hero() {
         </section>
     );
 }
+
+window.Hero = Hero;

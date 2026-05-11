@@ -8,12 +8,12 @@ function Process() {
     ];
 
     return (
-        <section className="py-20 sm:py-28 relative bg-[#020205] overflow-hidden">
+        <section className="py-12 sm:py-16 relative bg-[#020205] overflow-hidden">
             {/* Ambient Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-900/5 rounded-full blur-[120px] pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="text-center mb-20 sm:mb-24 reveal reveal-up">
+                <div className="text-center mb-12 sm:mb-16 reveal reveal-up">
                     <div className="inline-flex items-center gap-4 mb-5">
                         <div className="h-px bg-purple-500/50 w-10 sm:w-16"></div>
                         <h2 className="text-[11px] font-bold tracking-[0.3em] text-purple-400 uppercase">OUR PROCESS</h2>
@@ -76,3 +76,5 @@ function Process() {
         </section>
     );
 }
+
+window.Process = Process;

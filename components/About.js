@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section id="about" className="pb-16 sm:pb-20 pt-8 sm:pt-10 bg-[#020205]">
+        <section id="about" className="pb-10 sm:pb-12 pt-6 sm:pt-8 bg-[#020205]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="bg-[#0a0a16] border border-[#1f1f3a] rounded-2xl p-5 sm:p-8 lg:p-12 relative overflow-hidden reveal reveal-up">
@@ -25,13 +25,12 @@ function About() {
                                                 <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
                                                 <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
                                             </div>
-                                            <div className="flex flex-col gap-1.5">
-                                                <div className="w-3/4 h-1.5 bg-blue-500/20 rounded"></div>
-                                                <div className="w-1/2 h-1.5 bg-purple-500/20 rounded"></div>
-                                                <div className="w-5/6 h-1.5 bg-[#1f1f3a] rounded"></div>
-                                                <div className="w-2/3 h-1.5 bg-[#1f1f3a] rounded"></div>
-                                                <div className="w-1/3 h-1.5 bg-blue-500/20 rounded mt-2"></div>
-                                                <div className="w-4/5 h-1.5 bg-[#1f1f3a] rounded"></div>
+                                            <div className="flex-grow flex items-center justify-center p-4">
+                                                <img 
+                                                    src="assets/logo.png" 
+                                                    alt="FDT Logo" 
+                                                    className="w-full max-w-[80px] h-auto object-contain opacity-80"
+                                                />
                                             </div>
                                             <div className="absolute bottom-2 right-2 w-10 h-10 bg-purple-600/20 border border-purple-500/30 rounded-lg flex items-center justify-center">
                                                 <div className="icon-code text-purple-400 text-sm"></div>
@@ -60,16 +59,22 @@ function About() {
                         {/* Center Text */}
                         <div className="w-full lg:w-[40%] text-center lg:text-left order-1 lg:order-2 reveal reveal-right delay-200">
                             <div className="text-[10px] font-bold tracking-widest text-white uppercase mb-3 flex items-center justify-center lg:justify-start gap-2">
-                                WHO WE ARE
+                                <div className="w-2 h-2 rounded-full bg-purple-500"></div>
+                                OUR STORY
                             </div>
                             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold mb-5 text-white leading-tight">
-                                We are a team of builders,{' '}
-                                innovators and problem solvers.
+                                Empowering the next generation of <span className="text-purple-500">builders</span>.
                             </h2>
                             <p className="text-sm text-gray-400 mb-7 leading-relaxed">
-                                Forge Digital Technologies is a tech solutions brand focused on building scalable digital products for real-world impact. We combine strategy, design and technology to deliver solutions that drive growth.
+                                Forge Digital Technologies is more than a tech company. Based in the heart of Hyderabad, we build the tools and communities that help the next generation learn, lead, and grow.
                             </p>
-                            <a href="#" className="inline-flex items-center gap-2 px-6 py-2.5 border border-[#2a2a4a] hover:border-gray-400 rounded-full text-xs font-semibold text-white transition-colors bg-[#111122]">
+                            <p className="text-[13px] text-gray-500 mb-7 italic border-l-2 border-purple-500/30 pl-4">
+                                "Students are the spark of every revolution. Our focus is on solving the real challenge — not a lack of talent, but a lack of the right ecosystem." — Jashwanth Sonti, CEO
+                            </p>
+                            <a 
+                                href="#about-page"
+                                className="inline-flex items-center gap-2 px-6 py-2.5 border border-[#2a2a4a] hover:border-purple-500 rounded-full text-xs font-semibold text-white transition-colors bg-[#111122] hover:bg-purple-900/20 cursor-pointer"
+                            >
                                 Learn More About Us <div className="icon-arrow-right"></div>
                             </a>
                         </div>
@@ -98,3 +103,5 @@ function About() {
         </section>
     );
 }
+
+window.About = About;

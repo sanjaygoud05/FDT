@@ -39,3 +39,5 @@ function Features() {
         </section>
     );
 }
+
+window.Features = Features;
