@@ -174,9 +174,6 @@ function AboutPage() {
                                 </div>
                             </div>
                             <div className="flex flex-col gap-3">
-                                <a href="https://forgedigital.tech" target="_blank" rel="noreferrer" className="flex items-center justify-center lg:justify-start gap-3 text-base sm:text-lg text-gray-300 hover:text-white transition-colors bg-[#0a0a16]/50 px-4 py-2 rounded-lg">
-                                    <div className="icon-globe text-purple-400"></div> www.forgedigital.tech
-                                </a>
                                 <a href="mailto:info@forgedigitaltechnologies.com" className="flex items-center justify-center lg:justify-start gap-3 text-base sm:text-lg text-gray-300 hover:text-white transition-colors bg-[#0a0a16]/50 px-4 py-2 rounded-lg">
                                     <div className="icon-mail text-purple-400"></div> info@forgedigitaltechnologies.com
                                 </a>

@@ -60,7 +60,6 @@ function Footer() {
                                 {[
                                     { icon: 'icon-mail', text: 'info@forgedigitaltechnologies.com' },
                                     { icon: 'icon-phone', text: '+91 63042 18064' },
-                                    { icon: 'icon-globe', text: 'www.forgedigital.tech' },
                                     { icon: 'icon-map-pin', text: 'India' },
                                 ].map(({ icon, text }) => (
                                     <li key={text} className="flex items-center gap-3 text-[13px] text-gray-400">
@@ -85,7 +84,7 @@ function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="mt-12 sm:mt-14 pt-6 border-t border-[#1f1f3a] text-center sm:text-left text-[12px] text-gray-600 reveal reveal-up delay-600">
-                    © 2026 Forge Digital Technologies. All rights reserved.
+                    © 2026 Student Forge Technologies Pvt.Ltd.. All rights reserved.
                 </div>
             </div>
         </footer>

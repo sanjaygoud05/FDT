@@ -97,10 +97,6 @@ function Services({ isPage = false }) {
 
                                 <div className="flex flex-wrap justify-center gap-6 md:gap-10 pt-8 border-t border-[#1f1f3a] w-full">
                                     <div className="flex items-center gap-2">
-                                        <div className="icon-globe text-xs text-purple-400"></div>
-                                        <span className="text-[12px] font-medium text-gray-400">www.forgedigital.tech</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
                                         <div className="icon-mail text-xs text-purple-400"></div>
                                         <span className="text-[12px] font-medium text-gray-400">info@forgedigitaltechnologies.com</span>
                                     </div>
