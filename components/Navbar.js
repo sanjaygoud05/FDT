@@ -26,7 +26,6 @@ function Navbar() {
         { href: '#about-page', label: 'About' },
         { href: '#services-page', label: 'Services' },
         { href: '#work', label: 'Our Work' },
-        { href: '#blog', label: 'Blog' },
         { href: '#contact-page', label: 'Contact' },
     ];
 

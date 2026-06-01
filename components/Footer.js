@@ -36,7 +36,7 @@ function Footer() {
                     <div className="reveal reveal-up delay-300">
                         <h4 className="text-white font-semibold text-[15px] mb-5">Quick Links</h4>
                         <ul className="space-y-3.5">
-                            {[['#home', 'Home'], ['#about-page', 'About Us'], ['#services', 'Services'], ['#work', 'Our Work'], ['#blog', 'Blog'], ['#contact-page', 'Contact']].map(([href, label]) => (
+                            {[['#home', 'Home'], ['#about-page', 'About Us'], ['#services', 'Services'], ['#work', 'Our Work'], ['#contact-page', 'Contact']].map(([href, label]) => (
                                 <li key={href}><a href={href} className="text-[13px] text-gray-400 hover:text-white transition-colors">{label}</a></li>
                             ))}
                         </ul>
